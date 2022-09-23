@@ -1,0 +1,30 @@
+.wd-page-title-font {
+font-size: 20px;
+font-weight: bold;
+}
+
+
+
+.tuit-dimension {
+width: 506px;
+}
+
+.tuit_padding {
+padding-bottom: 12px;
+}
+
+.wd-width-504 {
+width: 470px;
+
+}
+
+.wd-rounded-top {
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+.wd-rounded-bottom {
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+
+}
