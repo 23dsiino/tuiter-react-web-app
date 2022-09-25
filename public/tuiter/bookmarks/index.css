@@ -18,6 +18,10 @@ width: 470px;
 
 }
 
+.wd-no-underline {
+text-decoration:none;
+}
+
 .wd-rounded-top {
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
@@ -27,4 +31,14 @@ border-top-right-radius: 15px;
 border-bottom-left-radius: 15px;
 border-bottom-right-radius: 15px;
 
+}
+
+.wd-float-left-quarter {
+
+float: left;
+width: 25%;
+}
+
+.wd-center {
+ text-align: center;
 }
