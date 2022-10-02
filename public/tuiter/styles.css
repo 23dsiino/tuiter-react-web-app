@@ -1,4 +1,4 @@
-body {
+.wd-body-blk {
     background-color: black;
     color: white;
     margin-left: 16px;
@@ -28,12 +28,17 @@ float: left;
 
 .wd-float-left-most {
 float: left;
-width: 85%
+width: 90%
 
 }
 
 .wd-float-left {
 float:left
+}
+
+wd-font-17 {
+
+font-size: 17px;
 }
 
 .wd-float-right-small{
@@ -63,6 +68,19 @@ font-weight: bold;
   font-size: 15px;
 }
 
+.wd-font-14 {
+  font-size: 14px;
+}
+.wd-font-12 {
+  font-size: 12px;
+}
+
+.wd-overlap {
+  white-space: nowrap;
+}
+
+
+
 .wd-tuit-details-text{
 opacity: .8;
 color: rgb(110, 118, 125);
@@ -70,15 +88,24 @@ font-size: 13px;
 
 }
 
+.wd-no-underline{
+text-decoration: none;
+}
+
+.wd-full-width {
+width: 100%;
+}
+
 .wd-tuit-heading{
 font-size: 20px;
 padding-top: 5px;
-color:white;
 }
 
 .wd-top-padding {
 padding-top: 12px;
 }
+
+
 
 
 
@@ -101,9 +128,15 @@ padding-left: 16px;
 color: #FF2E2E;
 }
 
-.wd-pad-right-12 {
-padding-right: 12px;
+.wd-pad-right-25 {
+padding-right: 25px;
 }
+
+.wd-pad-right-12 {
+padding-right: 15px;
+}
+
+
 
 
 

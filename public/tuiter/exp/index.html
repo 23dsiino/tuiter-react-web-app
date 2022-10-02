@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class = 'container'>
+    <div class="mt-3 row justify-content-center">
+
+        <!-- LEFT SIDE BAR -->
+        <div id='left_side_bar' class="me-1 d-none d-sm-block col-xl-2 col-lg-1 col-md-2 col-sm-2 ">
+
+                <ul class="list-group wd-font-14" >
+
+                    <li class="list-group-item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+
+                    <a href = "../home.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                        <span class = "d-none d-xl-block"> <i class="fa fa-home"></i> Home</span>
+                        <span class = "d-xl-none"> <i class="fa fa-home"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="index.html" class = "wd-no-underline">
+                    <li class="list-group-item active">
+                         <span class = "d-none d-xl-block"> <i class="fa fa-hashtag"></i> Explore</span>
+                        <span class = "d-xl-none"> <i class="fa fa-hashtag"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="../notifications.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                         <span class = "d-none d-xl-block"> <i class="fa fa-bell"></i> Notifications</span>
+                        <span class = "d-xl-none"> <i class="fa fa-bell"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="../messages.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                        <span class = "d-none d-xl-block"> <i class = "fa fa-envelope"></i> Messages</span>
+                        <span class = "d-xl-none"> <i class="fa fa-envelope"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="../bookmarks/index.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                         <span class = "d-none d-xl-block"> <i class = 'fa fa-bookmark'></i> Bookmarks</span>
+                        <span class = "d-xl-none"> <i class="fa fa-bookmark"></i></span>
+                    </li>
+                    </a>
+
+                    <a href = "../lists.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                         <span class = "d-none d-xl-block"> <i class = "fa fa-list"> </i> Lists</span>
+                        <span class = "d-xl-none"> <i class="fa fa-list"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="../profile.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                         <span class = "d-none d-xl-block"> <i class = 'fa fa-user'> </i> Profile</span>
+                        <span class = "d-xl-none"> <i class="fa fa-user"></i></span>
+                    </li>
+                    </a>
+
+                    <a href="../more.html" class = "wd-no-underline">
+                    <li class="list-group-item">
+                         <span class = "d-none d-xl-block">
+                             <span class="fa-stack small">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span> More
+                         </span>
+                        <span class = "d-xl-none"> <span class="fa-stack small">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                        </span> </span>
+                    </li>
+                    </a>
+                </ul>
+
+        <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-15 mt-2 btn btn-primary override">Tweet</a>
+
+
+        </div>
+
+        <!-- MIDDLE SECTION -->
+        <div id='center_section' class="col-xl-6 col-lg-6 col-md-9 col-sm-9">
+               <!--Search Level  -->
+            <div class="input-group override wd-float-left-most">
+                <span class="input-group-text orr"><i class = 'fa fa-search'></i></span>
+                <input type="text" class="form-control override" placeholder="Search Tuitter">
+            </div >
+            <div class = "align-items-center wd-float-right-small">
+            <i class="align-items-center fa fa-cog text-primary fa-2x"></i>
+            </div>
+            <div class = "wd-row"></div>
+
+            <! -- Options Bar -->
+            <ul class="pt-3 nav nav-tabs mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-block d-sm-none d-md-block" href="entertainment.html">Entertainment</a>
+
+                </li>
+            </ul>
+
+            <!--Content Section -->
+            <div class ='card'>
+                <img src="sship.jpeg" class="card-img" alt="hey">
+
+                <div class="card-img-overlay text-white d-flex align-items-end">
+                    <h2 class="card-title">SpaceX's Starship</h2>
+                </div>
+
+            </div>
+
+            <!--TWEET CONTENT BEGINS -->
+            <div id = 'tweets'>
+
+                <ul class="list-group wd-font-15" >
+
+                    <li class="list-group-item wd-pad-right-25">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="wd-tuit-details-text">Web Development</span>
+                                </br>
+                                <span class="wd-font-17 wd-font-bold">React JS
+                                    <i class = 'fa fa-check-circle' ></i>
+                                </span>
+                                <span class="wd-tuit-details-text"> - 2h</span></br>
+                                <span class = 'wd-font-14 wd-font-bold'>
+                                    React.js is a component based front end library that makes it very easy to build
+                                    Single Page Applications or SPAs
+                                </span>
+                            </div>
+                            <div class="col-2">
+                                <img class = 'd-none d-sm-block d-md-none wd-rounded-corners-all-around-less' src="react.png" width="50px" height="50px">
+                                <img class = 'd-xs-block d-sm-none d-md-block wd-rounded-corners-all-around-less' src="react.png" width="65px" height="65px">
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item wd-pad-right-25">
+                        <div class="row">
+                            <div class="col-10">
+
+                                <span class="wd-font-17 wd-font-bold">JavaScript
+                                    <i class = 'fa fa-check-circle' ></i>
+                                </span>
+                                <span class="wd-tuit-details-text"> - 2h</span></br>
+                                <span class = 'wd-font-14 wd-font-bold'>
+                                    JavaScript is programming language that can run on browsers as well as desktops
+                                </span></br>
+                                <span class = 'wd-tuit-details-text'>123K Tweets</span>
+                            </div>
+                            <div class="col-2">
+                                <img class = 'd-none d-sm-block d-md-none wd-rounded-corners-all-around-less' src="jsLogo.png" width="50px" height="50px">
+                                <img class = 'd-xs-block d-sm-none d-md-block  wd-rounded-corners-all-around-less' src="jsLogo.png" width="65px" height="65px">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item wd-pad-right-25">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="wd-tuit-details-text">Web Development</span></br>
+                                <span class="wd-font-17 wd-font-bold">jQuery</span> </br>
+                                <span class = 'd-xs-block d-sm-none d-md-block wd-tuit-details-text'>123K Tweets</span>
+                            </div>
+                            <div class="col-2">
+                                <img class = 'd-none d-sm-block d-md-none wd-rounded-corners-all-around-less' src="jquery.png" width="50px" height="50px">
+                                <img class = 'd-xs-block d-sm-none d-md-block wd-rounded-corners-all-around-less' src="jquery.png" width="65px" height="65px">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item wd-pad-right-25">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="wd-tuit-details-text">Web Development</span></br>
+                                <span class="wd-font-17 wd-font-bold">NodeJS
+                                    <i class = 'fa fa-check-circle' ></i>
+                                </span>
+                                <span class="wd-tuit-details-text"> - 2h</span></br>
+                                <span class = 'wd-tuit-details-text'>123K Tweets</span>
+                            </div>
+                            <div class="col-2">
+                                <img class = 'd-none d-sm-block d-md-none wd-rounded-corners-all-around-less' src="nodejs.png" width="50px" height="50px">
+                                <img class = 'd-xs-block d-sm-none d-md-block wd-rounded-corners-all-around-less' src="nodejs.png" width="65px" height="65px">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--RIGHT SIDE BAR-->
+        <div id="right_side_bar" class="d-none d-lg-block col-lg-4 col-xl-3">
+
+           <ul class = "list-group wd-font-14">
+               <li class = 'list-group-item wd-font-bold'>
+                   Who to follow
+               </li>
+               <li class = 'list-group-item'>
+                   <div class = 'row'>
+                       <div class = 'col-2'>
+                           <img src = 'java.png' class = 'wd-rounded-corners-all-around' width="50px" height = '50px'>
+                       </div>
+                       <div class = 'col-6'>
+                           <span class = "wd-font-bold wd-overlap">Java </span><i class = 'fa fa-check-circle' ></i></br>
+                           <span class = 'wd-tuit-details-text wd-overlap'>@Java</span>
+                       </div>
+                       <div class = 'col-4'>
+                           <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-12 mt-2 btn btn-primary override">
+                               Follow</a>
+                       </div>
+                   </div>
+               </li>
+
+               <li class = 'list-group-item'>
+                   <div class = 'row'>
+                       <div class = 'col-2'>
+                           <img src = 'relativity.png' class = 'wd-rounded-corners-all-around' width="40px" height = '40px'>
+                       </div>
+                       <div class = 'col-6'>
+                           <span class = "wd-font-bold wd-overlap"> Relativity Space </span><i class = 'fa fa-check-circle' ></i></br>
+                           <span class = 'wd-tuit-details-text wd-overlap'>@relativityspace</span>
+                       </div>
+                       <div class = 'col-4'>
+                           <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-12 mt-2 btn btn-primary override">
+                               Follow</a>
+                       </div>
+                   </div>
+               </li>
+
+               <li class = 'list-group-item'>
+                   <div class = 'row'>
+                       <div class = 'col-2'>
+                           <img src = 'virgin_mobile.jpeg' class = 'wd-rounded-corners-all-around' width="40px" height = '40px'>
+                       </div>
+                       <div class = 'col-6'>
+                           <span class = "wd-font-bold wd-overlap"> Virgin Galactic </span><i class = 'fa fa-check-circle' ></i> </br>
+                           <span class = 'wd-tuit-details-text wd-overlap'>@virgingalactic</span>
+                       </div>
+                       <div class = 'col-4'>
+                           <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-12 mt-2 btn btn-primary override">
+                               Follow</a>
+                       </div>
+                   </div>
+               </li>
+
+               <li class = 'list-group-item'>
+                   <div class = 'row'>
+                       <div class = 'col-2'>
+                           <img src = 'nasa.png' class = 'wd-rounded-corners-all-around' width="40px" height = '40px'>
+                       </div>
+                       <div class = 'col-6'>
+                           <span class = "wd-font-bold wd-overlap"> Nasa </span><i class = 'fa fa-check-circle' ></i> </br>
+                           <span class = 'wd-tuit-details-text wd-overlap'>@NASA</span>
+                       </div>
+                       <div class = 'col-4'>
+                           <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-12 mt-2 btn btn-primary override">
+                               Follow</a>
+                       </div>
+                   </div>
+               </li>
+
+               <li class = 'list-group-item'>
+                   <div class = 'row'>
+                       <div class = 'col-2'>
+                           <img src = 'tesla.jpeg' class = 'wd-rounded-corners-all-around' width="40px" height = '40px'>
+                       </div>
+                       <div class = 'col-6'>
+                           <span class = "wd-font-bold wd-overlap"> Tesla </span><i class = 'fa fa-check-circle' ></i> </br>
+                           <span class = 'wd-tuit-details-text wd-overlap'>@Tesla</span>
+                       </div>
+                       <div class = 'col-4'>
+                           <a href="../tuit.html" class="justify-content-center wd-full-width wd-font-12 mt-2 btn btn-primary override">
+                               Follow</a>
+                       </div>
+                   </div>
+               </li>
+
+           </ul>
+
+
+
+</div>
+</div>
+</body>
+</html>
