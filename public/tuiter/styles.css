@@ -12,6 +12,13 @@
     padding-right: 12px;
 }
 
+.btn-primary.override {
+    padding-right: 0px;
+    padding-left: 0px;
+    border-radius: 70px;
+
+}
+
 .wd-round-image {
 border-radius: 50%;
 }

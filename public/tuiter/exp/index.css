@@ -5,13 +5,6 @@ white-space:nowrap;
 
  }
 
- .btn-primary.override {
- padding-right: 0px;
-padding-left: 0px;
- border-radius: 70px;
-
- }
-
  .form-control.override {
  border-radius: 50px;
  border-left: none;
@@ -22,6 +15,7 @@ padding-left: 0px;
 .input-group-text.orr {
 border-radius: 50px 0px 0px 50px;
 background-color: white;
+    color: lightgrey;
 border-right: none;
 
 }
