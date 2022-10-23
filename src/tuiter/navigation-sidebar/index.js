@@ -20,35 +20,35 @@ const NavigationSidebar = (
             <a className="list-group-item"><FaTwitter/></a>
             <a className={`list-group-item
                     ${active === 'home'?'active':''}`}>
-                <FaHome/> Home
+                <FaHome/> <span className={"d-none d-xl-block"}>Home</span>
             </a>
             <a className={`list-group-item
                     ${active === 'explore'?'active':''}`}>
-                <FaHashtag/> Explore
+                <FaHashtag/> <span className={"d-none d-xl-block"}>Explore</span>
             </a>
             <a className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-                <FaBell/> Notifications
+                <FaBell/> <span className={"d-none d-xl-block"}>Notifications</span>
             </a>
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-               <FaEnvelope/> Messages
+                <FaEnvelope/> <span className={"d-none d-xl-block"}>Messages</span>
             </a>
             <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                <FaBookmark/> Bookmarks
+                <FaBookmark/> <span className={"d-none d-xl-block"}>Bookmarks</span>
             </a>
             <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                <FaList/> Lists
+                <FaList/> <span className={"d-none d-xl-block"}>Lists</span>
             </a>
             <a className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-                <FaUser/> Profile
+                <FaUser/> <span className={"d-none d-xl-block"}>Profile</span>
             </a>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-               <FaCircle/> More
+                <FaCircle/><span className={"d-none d-xl-block"}> More</span>
             </a>
         </div>
     );
