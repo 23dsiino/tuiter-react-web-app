@@ -7,13 +7,13 @@ const WhoToFollowImage = ({
                               who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
                           }) => {
 
-    if(who.avatarIcon == "na"){
+    if(who.avatarIcon === "na"){
         return (<img className="rounded-circle" height={48} width={48} src={na}/>);
     }
-    if(who.avatarIcon == "sx"){
+    if(who.avatarIcon === "sx"){
         return (<img className="rounded-circle" height={48} width={48} src={sx}/>);
     }
-    if(who.avatarIcon == "te"){
+    if(who.avatarIcon === "te"){
         return (<img className="rounded-circle" height={48} width={48} src={te}/>);
     }
 

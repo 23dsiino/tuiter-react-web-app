@@ -8,23 +8,23 @@ import {deleteTuit} from "./tuits-reducer";
 import {useDispatch} from "react-redux";
 
 const TuitImage = ({post}) => {
-    if( post.image == 'hp'){
+    if( post.image === 'hp'){
         return (<img width={50}height={50}
                     className="float-end rounded-circle"
                     src={hp}/>);
 
     }
-    if (post.image == 'sx'){
+    if (post.image === 'sx'){
         return (<img width={50}height={50}
                      className="float-end rounded-circle"
                      src={sx}/>);
     }
-    if(post.image == 'ss'){
+    if(post.image === 'ss'){
         return (<img width={50} height={50}
                      className="float-end rounded-circle"
                      src={ss}/>);
     }
-    if(post.image == 'hg'){
+    if(post.image === 'hg'){
         return (<img width={50}height={50}
                      className="float-end rounded-circle"
                      src={hg}/>);
