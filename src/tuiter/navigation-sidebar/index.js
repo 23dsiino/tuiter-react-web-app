@@ -7,6 +7,10 @@ import {FaBookmark} from "react-icons/fa"
 import {FaList} from "react-icons/fa"
 import {FaUser} from "react-icons/fa"
 import {FaCircle} from "react-icons/fa"
+import {BrowserRouter} from "react-router-dom";
+import HomeComponent from "../home";
+import {Route, Routes} from "react-router";
+import ExploreComponent from "../explore";
 
 
 
@@ -19,11 +23,11 @@ const NavigationSidebar = (
         <div className="list-group">
             <a className="list-group-item"><FaTwitter/></a>
             <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home'?'active':''}`} href={'/tuiter/'}>
                 <FaHome/> <span className={"d-none d-xl-block"}>Home</span>
             </a>
             <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`} href={'/tuiter/explore/'}>
                 <FaHashtag/> <span className={"d-none d-xl-block"}>Explore</span>
             </a>
             <a className={`list-group-item
@@ -51,6 +55,7 @@ const NavigationSidebar = (
                 <FaCircle/><span className={"d-none d-xl-block"}> More</span>
             </a>
         </div>
+
     );
 };
 export default NavigationSidebar;
