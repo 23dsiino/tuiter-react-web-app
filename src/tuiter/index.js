@@ -21,9 +21,9 @@ function Tuiter() {
     <Provider store={store}>
 
                 <Routes>
-                    <Route path={'/tuiter/explore'} element={<ExploreComponent/>}/>
+                    <Route path={'/tuiter/explore/'} element={<ExploreComponent/>}/>
                     <Route path={''} element={<HomeComponent/>}/>
-                    <Route path={'/explore'} element={<ExploreComponent/>}/>
+                    <Route path={'/explore/'} element={<ExploreComponent/>}/>
 
                 </Routes>
 
