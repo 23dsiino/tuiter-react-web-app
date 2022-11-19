@@ -1,12 +1,15 @@
 import React from "react";
 import {FaRegComment} from "react-icons/fa"
 import {FaRetweet} from "react-icons/fa";
-import {FaHeart} from 'react-icons/fa'
-import {FaRegHeart} from "react-icons/fa";
+
+import {useDispatch} from 'react-redux'
 import {FaShare} from "react-icons/fa";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 
 const TuitStats = ({post}) =>{
+    console.log(post)
+    const dispatch = useDispatch();
     return (
         <div className={'row mt-2 small'}>
             <div className={'col-2'}/>
@@ -19,10 +22,26 @@ const TuitStats = ({post}) =>{
                 <span className={'ps-1'}>{post.retuits}</span>
             </div>
             <div className={'col-2'}>
-                {post.liked && <span className={'text-danger'}><FaHeart/>
-                </span>}
-                {!post.liked && <FaRegHeart/>}
-                <span className={'ps-1'}>{post.likes}</span>
+
+
+
+                {!post.liked && <i onClick={() =>
+
+                        dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes + 1,
+                            liked: !post.liked
+                    }))} className="bi bi-heart me-2 "></i>}
+                {post.liked && <i onClick={() =>
+
+                    dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.likes - 1,
+                        liked: !post.liked
+                    }))} className="bi bi-heart-fill text-danger me-2"></i>}
+                {post.likes}
+
+
             </div>
             <div className={'col-2'}>
                 <FaShare/>

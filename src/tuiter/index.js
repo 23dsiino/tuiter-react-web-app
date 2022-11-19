@@ -12,7 +12,7 @@ import {Route, Routes} from "react-router";
 
 const store = configureStore({
     reducer: {who: whoReducer,
-                tuits: tuitsReducer}
+                tuitsData: tuitsReducer}
     }
 );
 

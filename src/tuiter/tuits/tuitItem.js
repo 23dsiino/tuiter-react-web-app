@@ -4,7 +4,8 @@ import hp from '../images/hp.png'
 import sx from '../images/sx.jpeg'
 import ss from '../images/ssnape.jpeg'
 import hg from '../images/hg.jpeg'
-import {deleteTuit} from "./tuits-reducer";
+import bc from '../images/bc.png'
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const TuitImage = ({post}) => {
@@ -29,12 +30,17 @@ const TuitImage = ({post}) => {
                      className="float-end rounded-circle"
                      src={hg}/>);
     }
+    if(post.image === 'bc'){
+        return (<img width={50}height={50}
+                     className="float-end rounded-circle"
+                     src={bc}/>);
+    }
 }
 const TuitItem = ({post}) => {
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
